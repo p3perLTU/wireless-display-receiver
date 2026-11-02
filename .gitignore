@@ -1,0 +1,43 @@
+# build output
+build/
+out/
+tests/out/
+*.class
+*.dex
+*.idsig
+
+# signing keys and their passwords (the key lives outside the project)
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.dpapi
+release-pass*
+local.properties
+
+# ready-made apps: share them as release downloads, not in git
+*.apk
+*.aab
+
+# the TV's address for enable-5ghz.ps1
+tv-ip.txt
+
+# screenshots and personal media
+*.png
+*.jpg
+*.jpeg
+*.mp4
+
+# logs, editor and local files
+*.log
+*.part
+*.bak
+*.iml
+.idea/
+.vscode/
+CLAUDE.md
+
+# screenshots used in the documentation
+!docs/images/*.png

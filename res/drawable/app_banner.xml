@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 16:9 banner: the mark only (the name is shown by the launcher, not drawn here)
+     on a flat dark colour, so a launcher can cut the background away and show the mark. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#FF12121A" android:pathData="M0,0h320v180h-320z" />
+    <group android:translateX="88" android:translateY="-8">
+    <path android:pathData="M42,60h60a16,16 0 0 1 16,16v44a16,16 0 0 1 -16,16h-60a16,16 0 0 1 -16,-16v-44a16,16 0 0 1 16,-16z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="26" android:startY="60" android:endX="118" android:endY="136"
+                android:startColor="#FF3884FF" android:endColor="#FF7C4DFF" />
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="4" android:strokeLineCap="round"
+        android:pathData="M46,92A28,28 0 0 1 98,92 M54,100A17,17 0 0 1 90,100 M62,108A7,7 0 0 1 82,108" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M67,118a3,3 0 1 0 6,0a3,3 0 1 0 -6,0z" />
+    </group>
+</vector>

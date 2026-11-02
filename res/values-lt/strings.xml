@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wireless Display Receiver</string>
+    <string name="subtitle">Rodykite telefoną, Samsung DeX ar bet kurį Miracast ekraną šiame TV</string>
+    <string name="status_off">Spauskite Pradėti, kad programa lauktų telefono</string>
+    <string name="status_wait">Paruošta, laukiama telefono</string>
+    <string name="status_connecting">Jungiamasi prie telefono…</string>
+    <string name="tv_name">Šis TV telefone rodomas kaip „%1$s“</string>
+    <string name="tv_name_unknown">Šis TV</string>
+    <string name="steps">Telefone: atidarykite greitus nustatymus, bakstelėkite Samsung DeX (arba Smart View) ir pasirinkite šį TV.</string>
+    <string name="five_wait">Ruošiamas 5 GHz (2560x1440), užtruks apie minutę…</string>
+    <string name="five_usb">5 GHz ir 2560x1440: TV kūrėjo parinktyse įjunkite USB derinimą</string>
+    <string name="five_allow">TV leiskite USB derinimą ir pažymėkite „Visada leisti“</string>
+    <string name="five_ok">5 GHz paruoštas</string>
+    <string name="five_off">Įprastas režimas, 1080p. 5 GHz duoda 2560x1440, bet reikia TV USB derinimo.</string>
+    <string name="btn_5g_on">5 GHz režimas: įjungtas</string>
+    <string name="btn_5g_off">5 GHz režimas: išjungtas</string>
+    <string name="btn_help">Kaip naudoti</string>
+    <string name="close">Uždaryti</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="help_title">Kaip naudoti Wireless Display Receiver</string>
+    <string name="help1_title">1  Atidarykite DeX telefone</string>
+    <string name="help1_text">Perbraukite žemyn greitiems nustatymams ir bakstelėkite Samsung DeX (arba Smart View).</string>
+    <string name="help2_title">2  Pasirinkite šį TV</string>
+    <string name="help2_text">Pasirinkite TV su pavadinimu, kuris rodomas šios programos ekrane. Jei telefonas paklaus, patvirtinkite.</string>
+    <string name="help3_title">3  Dirbkite dideliame ekrane</string>
+    <string name="help3_text">Vaizdas užima visą TV. Norėdami baigti, pultelyje spauskite Atgal.</string>
+    <string name="help_tip">Pelės žymeklis: telefone bakstelėkite pranešimą „Samsung DeX veikia“, kad atsidarytų jutiklinė sritis.</string>
+    <string name="five_title">5 GHz režimas (2560×1440)</string>
+    <string name="five_pic1">Ką siunčia telefonas: 1080p (kairėje) arba 2560×1440 (dešinėje)</string>
+    <string name="five_pic2">1 USB derinimas įjungtas · 2 vienąkart „Leisti“ · 3 Wi-Fi persikrauna</string>
+    <string name="five_why_title">Kam reikalingas jungiklis?</string>
+    <string name="five_why">Šis TV neturi Wi-Fi šalies kodo, todėl Wi-Fi Direct veikia tik 2,4 GHz, o telefonas siunčia 1080p. Nustačius šalį, Wi-Fi Direct gali naudoti 5 GHz, o telefonas siunčia 2560×1440, vaizdas daug ryškesnis.</string>
+    <string name="five_how_title">Ką daro programa</string>
+    <string name="five_how">Prisijungia prie šio TV ADB (turi būti įjungtas USB derinimas, TV vieną kartą paklausia „Leisti“), nustato Wi-Fi šalį pagal TV kalbą ir perkrauna Wi-Fi. Po kiekvieno TV paleidimo tai užtrunka apie minutę.</string>
+    <string name="five_safe_title">Saugu išbandyti</string>
+    <string name="five_safe">TV nieko nuolatinio nekeičiama. Režimas išsijungia pats, kai sustabdote ar išeinate iš programos, o raktas, kuriuo programa prisijungia, ištrinamas.</string>
+    <string name="five_turn_on">Įjungti 5 GHz</string>
+    <string name="five_turn_off">Išjungti 5 GHz</string>
+    <string name="five_keep">Palikti įjungtą</string>
+    <string name="btn_start">Pradėti</string>
+    <string name="btn_stop">Sustabdyti</string>
+    <string name="back_hint">Norėdami išeiti, spauskite Atgal</string>
+    <string name="no_permission">Telefonui rasti reikia vietos leidimo.</string>
+    <string name="failed">Nepavyko (kodas %1$d)</string>
+    <string name="unsupported">Šis TV neturi Wi-Fi Direct</string>
+</resources>

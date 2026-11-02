@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wireless Display Receiver</string>
+    <string name="subtitle">Show your phone, Samsung DeX or any Miracast screen on this TV</string>
+    <string name="status_off">Press Start to wait for your phone</string>
+    <string name="status_wait">Ready, waiting for your phone</string>
+    <string name="status_connecting">Connecting to your phone…</string>
+    <string name="tv_name">This TV shows up as “%1$s”</string>
+    <string name="tv_name_unknown">This TV</string>
+    <string name="steps">On your phone: open Quick settings, tap Samsung DeX (or Smart View), then pick this TV.</string>
+    <string name="five_wait">Getting 5 GHz ready for 2560x1440 (about a minute)…</string>
+    <string name="five_usb">For 5 GHz and 2560x1440, turn on USB debugging in the TV’s developer options</string>
+    <string name="five_allow">On the TV, allow USB debugging and tick “Always allow”</string>
+    <string name="five_ok">5 GHz ready</string>
+    <string name="five_off">Standard mode, 1080p. 5 GHz gives 2560x1440 but needs USB debugging on the TV.</string>
+    <string name="btn_5g_on">5 GHz mode: on</string>
+    <string name="btn_5g_off">5 GHz mode: off</string>
+    <string name="btn_help">How to use</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="help_title">How to use Wireless Display Receiver</string>
+    <string name="help1_title">1  Open DeX on the phone</string>
+    <string name="help1_text">Swipe down for Quick settings and tap Samsung DeX (or Smart View).</string>
+    <string name="help2_title">2  Pick this TV</string>
+    <string name="help2_text">Choose the TV with the name shown on this app’s screen. Accept the prompt if the phone asks.</string>
+    <string name="help3_title">3  Work on the big screen</string>
+    <string name="help3_text">The picture takes the whole TV. Press Back on the remote to end it.</string>
+    <string name="help_tip">Mouse pointer: on the phone, tap the “Samsung DeX is running” notification to open the touchpad.</string>
+    <string name="five_title">5 GHz mode (2560×1440)</string>
+    <string name="five_pic1">What the phone sends: 1080p (left) or 2560×1440 (right)</string>
+    <string name="five_pic2">1 USB debugging on · 2 “Allow” once · 3 Wi-Fi restarts</string>
+    <string name="five_why_title">Why a switch?</string>
+    <string name="five_why">This TV has no Wi-Fi country code, so Wi-Fi Direct is limited to 2.4 GHz and the phone sends 1080p. With the country set, Wi-Fi Direct can use 5 GHz and the phone sends 2560×1440, a much sharper picture.</string>
+    <string name="five_how_title">What the app does</string>
+    <string name="five_how">It signs in to this TV’s own adb (USB debugging must be on, and the TV asks “Allow” once), sets the Wi-Fi country from the TV’s language and restarts the Wi-Fi. That takes about a minute after each TV restart.</string>
+    <string name="five_safe_title">Safe to try</string>
+    <string name="five_safe">Nothing permanent changes on the TV. The mode switches itself off when you stop or leave the app, and the key the app signs in with is deleted.</string>
+    <string name="five_turn_on">Turn on 5 GHz</string>
+    <string name="five_turn_off">Turn off 5 GHz</string>
+    <string name="five_keep">Keep it on</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="back_hint">Press Back to exit</string>
+    <string name="no_permission">Location permission is needed to find your phone.</string>
+    <string name="failed">Failed (code %1$d)</string>
+    <string name="unsupported">This TV has no Wi-Fi Direct</string>
+</resources>
