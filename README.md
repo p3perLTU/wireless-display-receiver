@@ -95,12 +95,6 @@ The **How to use** button shows the same steps with pictures:
 <img src="docs/images/how-to-use.png" width="640" alt="The in-app instruction: open DeX on the phone, pick the TV, work on the big screen">
 </div>
 
-A real picture from the TV (a Samsung phone in DeX mode, 1080p in standard mode):
-
-<div align="center">
-<img src="docs/images/real-cast.png" width="640" alt="The TV showing a Samsung DeX window with a web browser, sent from a phone">
-</div>
-
 > [!TIP]
 > For a mouse pointer, tap the *Samsung DeX is running* notification on the phone to open the touchpad.
 
