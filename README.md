@@ -16,7 +16,7 @@
 
 <br>
 
-<img src="docs/images/main.png" width="720" alt="Wireless Display Receiver on the TV: Start, 5 GHz mode and How to use buttons">
+<img src="docs/images/tour.gif" width="720" alt="A tour of the app on the TV: the main screen, the How to use screen and the 5 GHz explanation">
 
 </div>
 
