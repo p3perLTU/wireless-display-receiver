@@ -164,6 +164,19 @@ enable-5ghz.ps1              the same 5 GHz setup from a PC
 
 </details>
 
+## ⚖️ Trademarks, privacy and responsibility
+
+- **Trademarks.** Miracast is a trademark of the Wi-Fi Alliance. Samsung and DeX are trademarks of Samsung
+  Electronics. Google TV is a trademark of Google, and Sony is a trademark of Sony Group. They are used here
+  only to say what the app works with; this project is not certified, endorsed or affiliated.
+- **Privacy.** The app sends no data anywhere: it has no analytics, no accounts and makes no internet
+  requests. All of its traffic stays between the phone and the TV over Wi-Fi Direct, plus, if you turn on
+  5 GHz mode, a connection from the app to the TV's own adb on the same device. The log holds only
+  technical messages.
+- **Country code.** 5 GHz mode takes the Wi-Fi country from the TV's *language*, which is not always the
+  country you are in. Check that it matches where you are, or leave the mode off.
+- **No warranty.** The app is provided as is, under the [MIT licence](LICENSE). You use it, and the 5 GHz
+  mode in particular, at your own risk.
 ## 📄 Licence
 
 MIT, see [LICENSE](LICENSE).
