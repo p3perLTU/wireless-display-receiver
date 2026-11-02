@@ -177,6 +177,7 @@ enable-5ghz.ps1              the same 5 GHz setup from a PC
   country you are in. Check that it matches where you are, or leave the mode off.
 - **No warranty.** The app is provided as is, under the [MIT licence](LICENSE). You use it, and the 5 GHz
   mode in particular, at your own risk.
+
 ## 📄 Licence
 
 MIT, see [LICENSE](LICENSE).
