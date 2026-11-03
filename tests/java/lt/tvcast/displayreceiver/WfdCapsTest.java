@@ -45,6 +45,24 @@ final class WfdCapsTest {
         assertEquals(WfdCaps.R2_VIDEO, answer("wfd2_video_formats").trim().substring("wfd2_video_formats: ".length()), "the answer");
     }
 
+    /** A Windows source asks for the display EDID; without a valid one it never goes on to M4. */
+    static void testTheDisplayEdidIsAValidOneBlockEdid() {
+        String a = answer("wfd_display_edid").trim();
+        assertTrue(a.startsWith("wfd_display_edid: 0001 00ffffffffffff00"), "one block, EDID header");
+        String hex = a.substring("wfd_display_edid: 0001 ".length());
+        assertEquals(256, hex.length(), "128 bytes in hex");
+        int sum = 0;
+        for (int i = 0; i < 128; i++) sum += Integer.parseInt(hex.substring(2 * i, 2 * i + 2), 16);
+        assertEquals(0, sum & 0xFF, "the 128 bytes add up to 0 modulo 256");
+        assertEquals(0x01, Integer.parseInt(hex.substring(2 * 18, 2 * 18 + 2), 16), "EDID version 1");
+        assertTrue(hex.contains("416e64726f6964205456"), "named Android TV");
+        assertTrue(hex.contains("023a801871382d40582c4500"), "the first timing is 1920x1080 at 60 Hz");
+    }
+
+    static void testTheConnectorIsInternal() {
+        assertEquals("wfd_connector_type: 07\r\n", answer("wfd_connector_type"), "connector type");
+    }
+
     static void testTheNameIsASamsungTvOne() {
         assertEquals("SVDTZ8_0/SEC-UIBC3", WfdCaps.USER_AGENT, "user agent");
     }
