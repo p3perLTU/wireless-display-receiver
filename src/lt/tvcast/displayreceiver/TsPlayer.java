@@ -174,7 +174,19 @@ final class TsPlayer {
                 f.setInteger(MediaFormat.KEY_LOW_LATENCY, 1);
                 f.setInteger(MediaFormat.KEY_PRIORITY, 0);
                 f.setInteger(MediaFormat.KEY_MAX_INPUT_SIZE, 1 << 20);
-                video.configure(f, surface, null, 0);
+                try {
+                    video.configure(f, surface, null, 0);
+                } catch (RuntimeException e) {
+                    // Some decoders refuse low latency: the MediaTek AVC decoder of the Fire TV Stick logs
+                    // "decoder can not set low-latency to 1 (err -1010)" and configure fails with ERROR_UNSUPPORTED,
+                    // so no picture is ever decoded. Try again without the two optional hints.
+                    log.note("decoder refused low latency (" + e + "), configuring it without");
+                    video.release();
+                    video = MediaCodec.createDecoderByType(mime);
+                    f.removeKey(MediaFormat.KEY_LOW_LATENCY);
+                    f.removeKey(MediaFormat.KEY_PRIORITY);
+                    video.configure(f, surface, null, 0);
+                }
                 video.start();
                 log.note("video decoder: " + video.getName());
                 startDrain();
