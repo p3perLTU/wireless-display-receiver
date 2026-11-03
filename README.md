@@ -69,6 +69,12 @@ Nothing starts or changes by itself.
 You need an **Android 11+ TV** (built and tested on a Sony BRAVIA with Google TV, Android 12) and a
 **Samsung phone with DeX or Smart View**.
 
+> [!NOTE]
+> The author tested only a Sony BRAVIA (Google TV) with a Samsung Galaxy phone. A contributor reported that a
+> **Windows 11** laptop also shows on a **Fire TV Stick** (LineageOS 20, MediaTek MT8695); the author has not
+> tested that. On that setup the Android TV system still needed two things outside the app (it does not
+> advertise itself as a display sink, and its connection dialog takes the focus).
+
 ```powershell
 .\build.ps1                       # -> build\displayreceiver.apk
 adb install -r build\displayreceiver.apk
